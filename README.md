@@ -3,12 +3,11 @@
 這是一個使用 React 框架所建立的部落格平台。<br>
 使用者分為訪客和會員，訪客及會員皆可在前台網站享受流暢的文章瀏覽及留言功能，而會員則可以在後台對個人資料及文章進行管理。
 
-> 網站連結：[Re Blog](123)
+> 網站連結：[Re Blog](https://kw0409.github.io/react-rtk-blog/#/)
 
-> 使用者測試帳密：user00/User00
-> 後台測試帳密：admin00/Admin00
+> 使用者測試帳密：user00/user00
 
-![部落格網站截圖](https://i.imgur.com/znJvjej.png "部落格網站截圖")
+![部落格網站截圖](https://user-images.githubusercontent.com/80152099/186852004-f38eb996-280f-48ce-905e-9852fbf91ca2.png "部落格網站截圖")
 
 ## 目錄
 
@@ -26,196 +25,86 @@
   - About 頁面：隨意顯示一些關於這個部落格的話
   - 文章列表頁面：可看到所有文章，一頁只會顯示 5 筆（支援分頁功能，可以換頁）
   - 單篇文章頁面：點進去文章後可以看到文章完整內容
-  - 文章分類頁面：可查看不同分類的文章
+  - 文章分類頁面：可查看不同分類的文章 _(開發中...)_
   - 文章作者頁面：點擊作者可查看該作者發表的所有文章
   - 留言系統：可以用訪客/會員身份新增、編輯、刪除留言
-  - 搜尋系統：可搜尋特定文章
+  - 搜尋系統：可搜尋特定文章 _(開發中...)_
     <br>
 
 - 後台功能（僅供註冊會員使用）
 
-  - 會員資料系統：可查看/編輯會員資料
-  - 發表文章頁面：可以輸入標題跟內文發表新文章（支援 CKEditor）
+  - 會員資料系統：可查看/編輯會員資料 _(開發中...)_
+  - 發表文章頁面：可以輸入標題跟內文發表新文章 _(支援 CKEditor 功能開發中...)_
   - 文章管理頁面：可編輯、刪除文章
 
 ## 檔案架構
 
 ```
+├── api_docs.md
+├── build
+├── node_modules
 ├── package-lock.json
 ├── package.json
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
 │   ├── manifest.json
 │   └── robots.txt
 ├── README.md
-├── src
-│   ├── API
-│   │   ├── fetchAPI.js
-│   │   ├── imgurAPI.js
-│   │   └── WEBAPI.js
-│   ├── components
-│   │   ├── App
-│   │   │   ├── App.js
-│   │   │   └── App.test.js
-│   │   ├── common
-│   │   │   ├── Counter.js
-│   │   │   ├── Dropdown.js
-│   │   │   ├── EachErrorMessage.js
-│   │   │   ├── Errormessage.js
-│   │   │   ├── IconMark.js
-│   │   │   ├── index.css
-│   │   │   ├── Item.js
-│   │   │   ├── Loading.js
-│   │   │   ├── PageBtn.js
-│   │   │   ├── PopModal.js
-│   │   │   └── ProductsSectionTiTleContent.js
-│   │   ├── Footer
-│   │   │   ├── Footer.js
-│   │   │   └── index.js
-│   │   ├── Header
-│   │   │   ├── Header.js
-│   │   │   └── index.js
-│   │   ├── img
-│   │   │   ├── banner
-│   │   │   ├── homePhoto
-│   │   │   ├── icon
-│   │   │   └── product
-│   │   ├── routes
-│   │   │   └── ProtectedRoutes.js
-│   │   └── Style
-│   │       └── style.js
-│   ├── context.js
-│   ├── hooks
-│   │   ├── carts
-│   │   │   ├── shipping
-│   │   │   ├── useAddCartItems.js
-│   │   │   ├── useCartApi.js
-│   │   │   ├── useCount.js
-│   │   │   ├── useDebounce.js
-│   │   │   ├── useGetSingleProduct.js
-│   │   │   ├── useRecommendsApi.js
-│   │   │   ├── useScroll.js
-│   │   │   ├── useShipping.js
-│   │   │   └── useShippingApi.js
-│   │   ├── common
-│   │   │   ├── useHeader.js
-│   │   │   └── usePagination.js
-│   │   ├── discountHooks
-│   │   │   ├── useDiscount.js
-│   │   │   └── useEditDiscount.js
-│   │   ├── orders
-│   │   │   ├── useFIndAllOrder.js
-│   │   │   └── useOneOrder.js
-│   │   ├── paginationHooks
-│   │   │   └── usePagination.js
-│   │   ├── productHooks
-│   │   │   ├── useAddProduct.js
-│   │   │   ├── useAdminProducts.js
-│   │   │   ├── useAdminRestoreProducts.js
-│   │   │   ├── useCategory.js
-│   │   │   ├── useFindHotProducts.js
-│   │   │   ├── useFindNewProducts.js
-│   │   │   ├── useFindProducts.js
-│   │   │   ├── useFindRecommendProducts.js
-│   │   │   ├── useHotProducts.js
-│   │   │   ├── useSearchProducts.js
-│   │   │   └── useUpdateProduct.js
-│   │   └── user
-│   │       ├── useLogin.js
-│   │       ├── useRegister.js
-│   │       ├── useSingleTransaction.js
-│   │       ├── useTransaction.js
-│   │       ├── useUpadtePassword.js
-│   │       ├── useUpdateUserInfo.js
-│   │       └── useUser.js
-│   ├── index.css
-│   ├── index.js
-│   ├── normalize.css
-│   ├── pages
-│   │   ├── AddProductPage
-│   │   │   ├── AddProductPage.js
-│   │   │   └── index.js
-│   │   ├── Admin
-│   │   │   ├── components
-│   │   │   ├── index.js
-│   │   │   └── OrderPage.js
-│   │   ├── AdminProductsPage
-│   │   │   ├── AdminProductsPage.js
-│   │   │   ├── components
-│   │   │   └── index.js
-│   │   ├── AdminProductsRestorePage
-│   │   │   ├── AdminProductsRestorePage.js
-│   │   │   ├── components
-│   │   │   └── index.js
-│   │   ├── CartPage
-│   │   │   ├── CartPage.js
-│   │   │   ├── component
-│   │   │   └── index.js
-│   │   ├── discountPages
-│   │   │   ├── DiscountEditPage.js
-│   │   │   ├── DiscountsPage.js
-│   │   │   ├── index.js
-│   │   │   ├── inputItem.js
-│   │   │   └── TdContext.js
-│   │   ├── FaqPage
-│   │   │   ├── FaqItems.js
-│   │   │   ├── FaqPage.js
-│   │   │   └── index.js
-│   │   ├── HomePage
-│   │   │   ├── components
-│   │   │   ├── HomePage.js
-│   │   │   └── index.js
-│   │   ├── HotProductsPage
-│   │   │   ├── components
-│   │   │   ├── HotProductsPage.js
-│   │   │   └── index.js
-│   │   ├── LoginPage
-│   │   │   ├── components
-│   │   │   ├── index.js
-│   │   │   └── LoginPage.js
-│   │   ├── NewProductsPage
-│   │   │   ├── components
-│   │   │   ├── index.js
-│   │   │   └── NewProductsPage.js
-│   │   ├── OrderWholeListPagePage
-│   │   │   ├── components
-│   │   │   ├── index.js
-│   │   │   └── OrderWholeListPage.js
-│   │   ├── ProductsPage
-│   │   │   ├── components
-│   │   │   ├── index.js
-│   │   │   └── ProductsPage.js
-│   │   ├── RegisterPage
-│   │   │   ├── components
-│   │   │   ├── index.js
-│   │   │   └── RegisterPage.js
-│   │   ├── SearchPage
-│   │   │   ├── components
-│   │   │   ├── index.js
-│   │   │   └── SearchPage.js
-│   │   ├── SingleProductPage
-│   │   │   ├── index.js
-│   │   │   ├── SingleProduct.js
-│   │   │   └── SingleProductPage.js
-│   │   ├── SingleTransactionPage
-│   │   │   ├── index.js
-│   │   │   └── SingleTransactionPage.js
-│   │   ├── TransactionPage
-│   │   │   ├── index.js
-│   │   │   └── TransactionPage.js
-│   │   ├── UpdateProductPage
-│   │   │   ├── index.js
-│   │   │   ├── old.js
-│   │   │   └── UpdateProductPage.js
-│   │   └── UserPage
-│   │       ├── components
-│   │       ├── index.js
-│   │       └── UserPage.js
-│   ├── reportWebVitals.js
-│   ├── setupTests.js
-│   └── utils.js
-└── TREE.md
+└── src
+    ├── components
+    │   ├── App
+    │   │   ├── App.js
+    │   │   └── index.js
+    │   ├── Header
+    │   │   ├── Header.js
+    │   │   └── index.js
+    │   ├── Loader
+    │   │   ├── index.js
+    │   │   └── Loader.js
+    │   └── Pagination
+    │       ├── index.js
+    │       └── Pagination.js
+    ├── context.js
+    ├── customHooks
+    │   ├── usePagination.js
+    │   └── useSubmit.js
+    ├── index.css
+    ├── index.js
+    ├── pages
+    │   ├── AboutPage
+    │   │   ├── AboutPage.js
+    │   │   └── index.js
+    │   ├── ArticlePage
+    │   │   ├── ArticlePage.js
+    │   │   └── index.js
+    │   ├── HomePage
+    │   │   ├── HomePage.js
+    │   │   ├── index.js
+    │   │   └── PostList.js
+    │   ├── index.js
+    │   ├── LoginPage
+    │   │   ├── index.js
+    │   │   └── LoginPage.js
+    │   ├── NewPostPage
+    │   │   ├── index.js
+    │   │   └── NewPostPage.js
+    │   ├── RegisterPage
+    │   │   ├── index.js
+    │   │   └── RegisterPage.js
+    │   └── UpdatePostPage
+    │       ├── index.js
+    │       └── UpdatePostPage.js
+    ├── redux
+    │   ├── features
+    │   │   ├── postSlice.js
+    │   │   └── userSlice.js
+    │   ├── selector.js
+    │   └── store.js
+    ├── utils.js
+    └── WebAPI.js
 ```
 
 ## 使用技術
@@ -230,6 +119,6 @@
 - Nginx
 - PM2
 
-## API 文件 {#API 文件}
+## API 文件
 
-- [API 文件](./api_docs.md)
+- [API 文件](./api_docs.md) _(開發中...)_
