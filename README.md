@@ -3,11 +3,11 @@
 這是一個使用 React 框架所建立的部落格平台。<br>
 使用者分為訪客和會員，訪客及會員皆可在前台網站享受流暢的文章瀏覽及留言功能，而會員則可以在後台對個人資料及文章進行管理。
 
-> 網站連結：[Re Blog](https://kw0409.github.io/react-rtk-blog/#/)
+> 網站連結：[RE Blog](https://kw0409.github.io/react-rtk-blog/#/)
 
 > 使用者測試帳密：user00/user00
 
-![部落格網站截圖](https://user-images.githubusercontent.com/80152099/186852004-f38eb996-280f-48ce-905e-9852fbf91ca2.png "部落格網站截圖")
+![部落格網站截圖](https://user-images.githubusercontent.com/80152099/190562029-bbd3c9c1-eca6-4773-ba26-50a78a7af354.png "部落格網站截圖")
 
 ## 目錄
 

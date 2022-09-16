@@ -105,7 +105,7 @@ export default function Header() {
     <HeaderContainer>
       <LeftNavbar>
         <Brand>
-          <Link to="/">React 部落格</Link>
+          <Link to="/">RE Blog</Link>
         </Brand>
         <NavbarList>
           <Nav to="/" $active={currentLocation.pathname === "/"}>
